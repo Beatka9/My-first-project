@@ -50,30 +50,30 @@ hr {
   font-weight: bold;
 }
 .TodayCol1 {
-  line-height: 0.8;
+  line-height: 1;
 }
 .TodayCol2,
 .Tomorrow {
   line-height: 1.6;
 }
 .CityName {
-  font-size: 30px;
+  font-size: 26px;
 }
 .TemperatureNow {
   font-size: 62px;
 }
 .RangeTemperatureToday {
-  font-size: 24px;
+  font-size: 22px;
 }
 .IconToday,
 .IconTomorrow {
   font-size: 50px;
 }
 .PrecipitationToday {
-  font-size: 18px;
+  font-size: 16px;
 }
 .TomorrowName {
-  font-size: 24px;
+  font-size: 20px;
 }
 .DayBox,
 .Tomorrow {
