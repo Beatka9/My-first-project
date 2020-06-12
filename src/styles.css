@@ -1,0 +1,111 @@
+body {
+  background-color: #212121;
+}
+input,
+#current-city {
+  margin: 10px 5px;
+}
+input,
+.container,
+.Tomorrow,
+#current-city {
+  border: solid 2px #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 1px 1px #212121;
+}
+hr {
+  border: solid 1px #f5f5f5;
+  text-shadow: 1px 1px #212121;
+}
+
+.container {
+  max-width: 600px;
+  background-image: url(AURORA2.jpg);
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  text-shadow: 1px 1px #212121;
+  color: #f5f5f5;
+  margin: 20px 0;
+}
+
+.button {
+  background-color: #f5f5f5;
+  color: #212121;
+  padding: 2px 4px;
+  box-shadow: 1px 1px #212121;
+  transition: 300ms ease-in-out;
+}
+.button:hover {
+  opacity: 0.4;
+}
+.NameApp {
+  padding: 15px;
+  font-size: 19px;
+}
+.NameApp,
+.CityName,
+.TemperatureNow,
+.TomorrowName,
+.DayName {
+  font-weight: bold;
+}
+.TodayCol1 {
+  line-height: 0.8;
+}
+.TodayCol2,
+.Tomorrow {
+  line-height: 1.6;
+}
+.CityName {
+  font-size: 30px;
+}
+.TemperatureNow {
+  font-size: 62px;
+}
+.RangeTemperatureToday {
+  font-size: 24px;
+}
+.IconToday,
+.IconTomorrow {
+  font-size: 50px;
+}
+.PrecipitationToday {
+  font-size: 18px;
+}
+.TomorrowName {
+  font-size: 24px;
+}
+.DayBox,
+.Tomorrow {
+  opacity: 0.7;
+}
+.RangeTemperatureTomorrow {
+  font-size: 20px;
+}
+.DayBox {
+  line-height: 1.2;
+  margin: 5px 0;
+  transition: 300ms ease-in-out;
+}
+.Tomorrow,
+.DayBox:hover {
+  background-color: #f5f5f5;
+  color: #212121;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.IconDay {
+  font-size: 20px;
+}
+#celsiusToday,
+#fahrenheitToday {
+  position: relative;
+  top: -30px;
+}
+#celsiusToday:hover,
+#fahrenheitToday:hover {
+  cursor: pointer;
+}
+#github-link {
+  color: white;
+}

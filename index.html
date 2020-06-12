@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛅SunOrRain</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9b015cf1fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class= "row">
+        <div class=" col-8">
+          <form id = "searchCity">
+            <input type="text" placeholder="Type city 🔍"autofocus="on" id= "city"/>
+            <input type="button" value="Search" class="button" />
+          </form>
+          </div>
+          <div class= "col-4">
+<button class= "button" id= "current-city">Current city</button>
+          </div>
+      </div>
+          <div class="row TodayCol1">
+        <div class="col-4">
+          <p class="CityName" id="cityName">
+            San Josè
+          </br>
+            </p><p id="day-time"> Today <hh:mm></hh:mm></p>
+          <br />
+          <p>
+            <span class="TemperatureNow">17</span>
+             <span id= "celsiusToday">C°</span>
+              <span id="fahrenheitToday"> </span>
+          </p>
+          <br />
+          <p class="RangeTemperatureToday">
+            <span id="maxTemperatureToday">25°</span>C°/
+            <span id="minTemperatureToday">14°</span>C°
+          </p>
+        </div>
+        <div class="col-4 TodayCol2">
+          <br />
+          <br />
+          <i class="fas fa-cloud IconToday"> </i>
+          <br />
+          <br />
+          <p class="PrecipitationToday">
+            Precipitation: 12%
+          </p>
+        </div>
+        <div class="col-3 Tomorrow">
+          <p class="TomorrowName">Tomorrow
+          </p>
+          <i class="fas fa-sun IconTomorrow"></i>
+
+          <p class="RangeTemperatureTomorrow">
+            <br />
+            22°/11°
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-3 DayBox">
+          <p class="DayName">
+            Monday
+          </p>
+          <i class="fas fa-sun IconDay"></i>
+          <p class="RangeTemperatureDay">
+            <br />
+            17°/7°
+          </p>
+        </div>
+        <div class="col-3 DayBox">
+          <p class="DayName">
+            Tuesday
+          </p>
+          <i class="fas fa-cloud-showers-heavy IconDay"></i>
+
+          <p class="RangeTemperatureDay">
+            <br />
+            17°/7°
+          </p>
+        </div>
+        <div class="col-3 DayBox">
+          <p class="DayName">
+            Wednesday
+          </p>
+          <i class="fas fa-cloud-sun IconDay"></i>
+          <p class="RangeTemperatureDay">
+            <br />
+            17°/7°
+          </p>
+        </div>
+        <div class="col-3 DayBox">
+          <p class="DayName">
+            Thursday
+          </p>
+          <i class="fas fa-cloud-sun-rain IconDay"></i>
+          <p class="RangeTemperatureDay">
+            <br />
+            17°/7°
+          </p>
+        </div>
+      </div>
+      <a href="https://github.com/Beatka9/TestSheCodesProject" id= "github-link"> 
+        Project on GitHub
+      </a>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
