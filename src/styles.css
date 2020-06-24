@@ -67,11 +67,14 @@ hr {
 .IconToday,
 .IconTomorrow {
   font-size: 50px;
+  margin: 10px;
 }
 .dataToday {
-  font-size: 14px;
+  font-size: 12px;
+  text-align: left;
 }
 .TomorrowName {
+  margin-top: 10px;
   font-size: 18px;
 }
 .DayBox,
@@ -83,7 +86,7 @@ hr {
 }
 .DayBox {
   line-height: 1.2;
-  margin: 5px 0;
+  margin: 0;
   transition: 300ms ease-in-out;
 }
 .Tomorrow,
@@ -91,6 +94,7 @@ hr {
   background-color: #f5f5f5;
   color: #212121;
   border-radius: 5px;
+  border: solid 1px #000;
   cursor: pointer;
 }
 .IconDay {
