@@ -62,4 +62,11 @@ function showTemperature(response) {
   minTemperature.innerHTML = `${Math.round(response.data.main.temp_min)}`;
   let maxTemperature = document.querySelector("#maxTemperatureToday");
   maxTemperature.innerHTML = `${Math.round(response.data.main.temp_max)}`;
+  let feelsLike = document.querySelector("#feelsLike");
+  let windSpeed = document.querySelector("#windSpeed");
+  let humidity = document.querySelector("#humidity");
+  feelsLike.innerHTML = `${Math.round(response.data.main.feels_like)}`;
+  humidity.innerHTML = `${Math.round(response.data.main.humidity)}`;
+  windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}`;
+  console.log(response);
 }
