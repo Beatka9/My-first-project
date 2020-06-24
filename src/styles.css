@@ -48,6 +48,10 @@ hr {
 .DayName {
   font-weight: bold;
 }
+.TodayCol1,
+.TodayCol2 {
+  text-align: left;
+}
 .TodayCol1 {
   line-height: 1;
 }
@@ -67,7 +71,7 @@ hr {
 .IconToday,
 .IconTomorrow {
   font-size: 50px;
-  margin: 10px;
+  margin: 15 + px;
 }
 .dataToday {
   font-size: 12px;
@@ -108,6 +112,11 @@ hr {
 #celsiusToday:hover,
 #fahrenheitToday:hover {
   cursor: pointer;
+}
+#weatherDescription {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 #github-link {
   color: #000;

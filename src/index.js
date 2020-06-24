@@ -16,7 +16,7 @@ function showDayTime(time) {
     minutes = `0${minutes}`;
   }
   let dayTime = document.querySelector("#day-time");
-  dayTime.innerHTML = `${weekDay} ${hours}:${minutes}`;
+  dayTime.innerHTML = ` ${weekDay} ${hours}:${minutes}`;
 }
 showDayTime(now);
 
@@ -68,5 +68,6 @@ function showTemperature(response) {
   feelsLike.innerHTML = `${Math.round(response.data.main.feels_like)}`;
   humidity.innerHTML = `${Math.round(response.data.main.humidity)}`;
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}`;
-  console.log(response);
+  let weatherDescription = document.querySelector("#weatherDescription");
+  weatherDescription.innerHTML = `${response.data.weather[0].description}`;
 }
