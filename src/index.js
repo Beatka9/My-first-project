@@ -40,6 +40,7 @@ function setCity(city) {
 function findCoords() {
   navigator.geolocation.getCurrentPosition(setPosition);
 }
+window.addEventListener(`DOMContentLoaded`, findCoords);
 let courrentCityButton = document.querySelector("#current-city");
 courrentCityButton.addEventListener("click", findCoords);
 
