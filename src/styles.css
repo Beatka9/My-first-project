@@ -14,17 +14,16 @@ input,
   box-shadow: 1px 1px #212121;
 }
 hr {
-  border: solid 1px #f5f5f5;
+  border: solid 1px #000;
   text-shadow: 1px 1px #212121;
 }
 
 .container {
   max-width: 600px;
-  background-image: url(AURORA2.jpg);
+  background-color: #a5dfef;
   font-family: "Comfortaa", cursive;
   text-align: center;
-  text-shadow: 1px 1px #212121;
-  color: #f5f5f5;
+  color: #000;
   margin: 20px 0;
 }
 
@@ -54,7 +53,7 @@ hr {
 }
 .TodayCol2,
 .Tomorrow {
-  line-height: 1.6;
+  line-height: 1.2;
 }
 .CityName {
   font-size: 26px;
@@ -69,15 +68,15 @@ hr {
 .IconTomorrow {
   font-size: 50px;
 }
-.PrecipitationToday {
-  font-size: 16px;
+.dataToday {
+  font-size: 14px;
 }
 .TomorrowName {
   font-size: 18px;
 }
 .DayBox,
 .Tomorrow {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .RangeTemperatureTomorrow {
   font-size: 20px;
@@ -107,5 +106,5 @@ hr {
   cursor: pointer;
 }
 #github-link {
-  color: white;
+  color: #000;
 }
