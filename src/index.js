@@ -89,7 +89,6 @@ function showTemperature(response) {
   );
 }
 function getDataForecast(city) {
-  alert(`Preparing forecast for ${city}`);
   let apiKey = "b502e3f5d51eafa682fcf63b13086eef";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);

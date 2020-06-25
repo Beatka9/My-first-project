@@ -4,6 +4,7 @@ body {
 input,
 #current-city {
   margin: 10px 5px;
+  text-align: left;
 }
 input,
 .container,
@@ -59,13 +60,14 @@ hr {
   font-size: 26px;
 }
 .TemperatureNow {
-  font-size: 60px;
+  font-size: 50px;
 }
 .RangeTemperatureToday {
-  font-size: 20px;
+  font-size: 18px;
 }
 #iconToday {
   max-height: 80px;
+  max-width: 60px;
   margin-bottom: 28px;
 }
 .dataToday {
@@ -77,7 +79,7 @@ hr {
   text-decoration: none;
 }
 .Hidden:hover {
-  cursor: default;
+  cursor: arrow;
   color: #000;
   text-decoration: none;
 }
