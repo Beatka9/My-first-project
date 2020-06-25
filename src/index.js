@@ -58,7 +58,8 @@ function showCityHere(response) {
 }
 function showTemperature(response) {
   let temperature = document.querySelector(".TemperatureNow");
-  temperature.innerHTML = `${Math.round(response.data.main.temp)}`;
+  celsiusTemperature = response.data.main.temp;
+  temperature.innerHTML = `${Math.round(celsiusTemperature)}`;
   let minTemperature = document.querySelector("#minTemperatureToday");
   minTemperature.innerHTML = `${Math.round(response.data.main.temp_min)}`;
   let maxTemperature = document.querySelector("#maxTemperatureToday");
@@ -77,3 +78,30 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  let celsiusUnit = document.getElementById("celsiusToday");
+  celsiusUnit.classList.remove("Hidden");
+  let fahrenheitUnit = document.getElementById("fahrenheitToday");
+  fahrenheitUnit.classList.add("Hidden");
+  let temperature = document.querySelector(".TemperatureNow");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+let celsiusTemperature = null;
+let fahrenheitLink = document.querySelector("#fahrenheitToday");
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+function showCelsius(event) {
+  event.preventDefault();
+  let fahrenheitUnit = document.getElementById("fahrenheitToday");
+  fahrenheitUnit.classList.remove("Hidden");
+  let celsiusUnit = document.getElementById("celsiusToday");
+  celsiusUnit.classList.add("Hidden");
+  let temperature = document.querySelector(".TemperatureNow");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusLink = document.querySelector("#celsiusToday");
+celsiusLink.addEventListener("click", showCelsius);
