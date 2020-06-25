@@ -3,7 +3,7 @@ body {
 }
 input,
 #current-city {
-  margin: 10px 5px;
+  margin: 10px 3px;
   text-align: left;
 }
 input,
@@ -22,11 +22,12 @@ hr {
 
 .container {
   max-width: 500px;
-  background-color: #a5dfef;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   font-family: "Comfortaa", cursive;
   text-align: center;
   color: #000;
   margin: 20px 0;
+  display: block;
 }
 
 .button {
@@ -40,8 +41,9 @@ hr {
   opacity: 0.4;
 }
 .NameApp {
-  padding: 15px;
-  font-size: 19px;
+  padding: 12px 7px;
+  font-size: 12px;
+  text-align: center;
 }
 .NameApp,
 .CityName,
