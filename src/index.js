@@ -20,12 +20,22 @@ function showDayTime(time) {
 }
 showDayTime(now);
 
+function setHours(timestamp) {
+  let time = new Date(timestamp);
+  let hours = time.getHours(timestamp);
+  let minutes = time.getMinutes(timestamp);
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return ` ${hours}:${minutes}`;
+}
 function showCity() {
   event.preventDefault();
   let city = document.querySelector("#city");
   let showedCity = document.querySelector(".CityName");
   showedCity.innerHTML = city.value;
   setCity(city.value);
+  getDataForecast(city.value);
 }
 let searchCity = document.querySelector("#searchCity");
 searchCity.addEventListener("submit", showCity);
@@ -54,6 +64,7 @@ function showCityHere(response) {
   let showedCity = document.querySelector(".CityName");
   showedCity.innerHTML = `${response.data.name}`;
   showTemperature(response);
+  getDataForecast(response.data.name);
 }
 function showTemperature(response) {
   let temperature = document.querySelector(".TemperatureNow");
@@ -77,7 +88,35 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+function getDataForecast(city) {
+  alert(`Preparing forecast for ${city}`);
+  let apiKey = "b502e3f5d51eafa682fcf63b13086eef";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showForecast);
+}
+function showForecast(response) {
+  let forecast = null;
+  let ForecastElement = document.querySelector("#forecast");
+  ForecastElement.innerHTML = null;
 
+  for (index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    ForecastElement.innerHTML += `
+  <div class="col-2 DayBox">
+  <p class="DayName">
+            ${setHours(forecast.dt * 1000)}
+          </p>
+          <img src="http://openweathermap.org/img/wn/${
+            forecast.weather[0].icon
+          }@2x.png" class= "iconDay"></img>
+          <p class="RangeTemperatureDay">
+            <br />
+            ${Math.round(forecast.main.temp)}°
+          </p>
+        </div>
+        </div>`;
+  }
+}
 function showFahrenheit(event) {
   event.preventDefault();
   let celsiusUnit = document.getElementById("celsiusToday");
