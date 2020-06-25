@@ -14,12 +14,13 @@ input,
   box-shadow: 1px 1px #212121;
 }
 hr {
+  color: #000;
   border: solid 1px #000;
   text-shadow: 1px 1px #212121;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 500px;
   background-color: #a5dfef;
   font-family: "Comfortaa", cursive;
   text-align: center;
@@ -44,7 +45,6 @@ hr {
 .NameApp,
 .CityName,
 .TemperatureNow,
-.TomorrowName,
 .DayName {
   font-weight: bold;
 }
@@ -52,12 +52,8 @@ hr {
 .TodayCol2 {
   text-align: left;
 }
-.TodayCol1 {
-  line-height: 1;
-}
-.TodayCol2,
-.Tomorrow {
-  line-height: 1.2;
+.weatherNow {
+  max-height: 70px;
 }
 .CityName {
   font-size: 26px;
@@ -66,11 +62,11 @@ hr {
   font-size: 60px;
 }
 .RangeTemperatureToday {
-  font-size: 22px;
+  font-size: 20px;
 }
-#iconToday,
-.IconTomorrow {
-  font-size: 50px;
+#iconToday {
+  max-height: 80px;
+  margin-bottom: 28px;
 }
 .dataToday {
   font-size: 12px;
@@ -98,7 +94,7 @@ hr {
 }
 .DayBox {
   line-height: 1.2;
-  margin: 0;
+  margin: auto;
   transition: 300ms ease-in-out;
 }
 .Tomorrow,
@@ -109,11 +105,11 @@ hr {
   border: solid 1px #000;
   cursor: pointer;
 }
+.DayName {
+  margin: 4px 0;
+}
 .IconDay {
   font-size: 20px;
-}
-.DayName {
-  margin: 5px;
 }
 #celsiusToday,
 #fahrenheitToday {

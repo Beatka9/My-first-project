@@ -34,13 +34,12 @@
           </div>
       </div>
           <div class="row">
-        <div class="col-5 TodayCol1">
+        <div class="col-7 TodayCol1">
           <p class="CityName" id="cityName">
             San Josè
           </br>
             </p><p>Updated <span id="day-time"> Today <hh:mm></hh:mm></span></p>
-          <br />
-          <p>
+          <p class= "weatherNow">
             <img id= "iconToday" src= ""></img>
             <span class="TemperatureNow">17</span>
              <a href="#" id= "celsiusToday"class = "Hidden">C°|</span>
@@ -51,8 +50,7 @@
             <span id="minTemperatureToday">14</span>C°
           </p>
         </div>
-        <div class="col-3 TodayCol2">
-          <br />
+        <div class="col-4 TodayCol2 Tomorrow">
           <br />
           <br />
           <p id="weatherDescription"> Clear Sky </p>
@@ -66,22 +64,12 @@
             Wind Speed: <span id="windSpeed"></span> Km/h
           </p>
         </div>
-        <div class="col-3 Tomorrow">
-          <p class="TomorrowName">Tomorrow
-          </p>
-          <i class="fas fa-sun IconTomorrow"></i>
-
-          <p class="RangeTemperatureTomorrow">
-            <br />
-            22°/11°
-          </p>
-        </div>
       </div>
       <hr />
       <div class="row">
-        <div class="col-3 DayBox">
+        <div class="col-2 DayBox">
           <p class="DayName">
-            Monday
+            8:00
           </p>
           <i class="fas fa-sun IconDay"></i>
           <p class="RangeTemperatureDay">
@@ -89,9 +77,9 @@
             17°/7°
           </p>
         </div>
-        <div class="col-3 DayBox">
+        <div class="col-2 DayBox">
           <p class="DayName">
-            Tuesday
+           11:00
           </p>
           <i class="fas fa-cloud-showers-heavy IconDay"></i>
 
@@ -100,9 +88,9 @@
             17°/7°
           </p>
         </div>
-        <div class="col-3 DayBox">
+        <div class="col-2 DayBox">
           <p class="DayName">
-            Wednesday
+            14:00
           </p>
           <i class="fas fa-cloud-sun IconDay"></i>
           <p class="RangeTemperatureDay">
@@ -110,9 +98,9 @@
             17°/7°
           </p>
         </div>
-        <div class="col-3 DayBox">
+        <div class="col-2 DayBox">
           <p class="DayName">
-            Thursday
+            17:00
           </p>
           <i class="fas fa-cloud-sun-rain IconDay"></i>
           <p class="RangeTemperatureDay">
@@ -120,11 +108,19 @@
             17°/7°
           </p>
         </div>
-      </div>
-      <a href="https://github.com/Beatka9/My-first-project" id= "github-link"> 
+          <div class="col-2 DayBox">
+          <p class="DayName">
+            20:00
+          </p>
+          <i class="fas fa-cloud-sun-rain IconDay"></i>
+          <p class="RangeTemperatureDay">
+            <br />
+            17°/7°
+          </p>
+        </div>
+    </div><a href="https://github.com/Beatka9/My-first-project" id= "github-link"> 
        Open source code
       </a>
-    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

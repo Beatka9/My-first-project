@@ -29,7 +29,6 @@ function showCity() {
 }
 let searchCity = document.querySelector("#searchCity");
 searchCity.addEventListener("submit", showCity);
-searchCity.addEventListener("click", showCity);
 
 function setCity(city) {
   let apiKey = "b502e3f5d51eafa682fcf63b13086eef";
