@@ -101,7 +101,7 @@ hr {
   cursor: pointer;
 }
 .DayName {
-  margin: 2px 4px;
+  margin: 2px 0;
 }
 .IconDay {
   max-width: 35px;
