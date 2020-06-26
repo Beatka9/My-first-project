@@ -23,36 +23,31 @@
   <body>
     <div class="container">
       <div class= "row">
-        <div class="col-9">
           <form id = "searchCity">
             <input type="text" placeholder="Type city 🔍"autofocus="on" autocomplete= "off"id= "city"/>
             <input type="button" value="Search" class="button" />
-            <button class= "button" id= "current-city">Current city</button>
           </form>
-        </div>
-        <div class="col-3 NameApp">
-⛅SunOrRain
-      </div>
+        <button class= "button" id= "current-city">Current city</button>
           </div>
       
           <div class="row">
         <div class="col-7 TodayCol1">
           <p class="CityName" id="cityName">
-            San Josè
+            
           </br>
-            </p><p>Updated <span id="day-time"> Today <hh:mm></hh:mm></span></p>
+            </p><p>Updated <span id="day-time">  <hh:mm></hh:mm></span></p>
           <p class= "weatherNow">
             <img id= "iconToday" src= ""></img>
-            <span class="TemperatureNow">17</span>
+            <span class="TemperatureNow"></span>
              <a href="#" id= "celsiusToday"class = "Hidden">C°|</span>
               <a href="#" id="fahrenheitToday"> F°</a>
           </p>
           <p class="RangeTemperatureToday">
-            <span id="maxTemperatureToday">25</span>C°/
-            <span id="minTemperatureToday">14</span>C°
+            <span id="maxTemperatureToday"></span>C°/
+            <span id="minTemperatureToday"></span>C°
           </p>
         </div>
-        <div class="col-4 TodayCol2 Tomorrow">
+        <div class="col-4 TodayCol2 WeatherDataNow">
           <br />
           <br />
           <p id="weatherDescription"> Clear Sky </p>
@@ -70,7 +65,7 @@
       <hr />
       <div class="row" id="forecast"> </div>
         <a href="https://github.com/Beatka9/My-first-project" id= "github-link" target="_blank"> 
-       Open source code
+       Open source code by Beatka9
       </a>
     <script src="src/index.js"></script>
   </body>

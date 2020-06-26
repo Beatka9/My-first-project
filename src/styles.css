@@ -3,12 +3,12 @@ body {
 }
 input,
 #current-city {
-  margin: 10px 3px;
   text-align: left;
+  margin: 8px 10px auto 8px;
 }
 input,
 .container,
-.Tomorrow,
+.WeatherDataNow,
 #current-city {
   border: solid 2px #f5f5f5;
   border-radius: 5px;
@@ -22,7 +22,7 @@ hr {
 
 .container {
   max-width: 500px;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: url(/src/rosa.png);
   font-family: "Comfortaa", cursive;
   text-align: center;
   color: #000;
@@ -33,19 +33,14 @@ hr {
 .button {
   background-color: #f5f5f5;
   color: #212121;
-  padding: 2px 4px;
+  margin: 2px 4px;
+  padding: 2px;
   box-shadow: 1px 1px #212121;
   transition: 300ms ease-in-out;
 }
 .button:hover {
   opacity: 0.4;
 }
-.NameApp {
-  padding: 12px 7px;
-  font-size: 12px;
-  text-align: center;
-}
-.NameApp,
 .CityName,
 .TemperatureNow,
 .DayName {
@@ -85,23 +80,18 @@ hr {
   color: #000;
   text-decoration: none;
 }
-.TomorrowName {
-  margin-top: 30px;
-  font-size: 18px;
-}
+
 .DayBox,
-.Tomorrow {
+.WeatherDataNow {
   opacity: 0.9;
 }
-.RangeTemperatureTomorrow {
-  font-size: 20px;
-}
+
 .DayBox {
   line-height: 1.2;
   margin: auto;
   transition: 300ms ease-in-out;
 }
-.Tomorrow,
+.WeatherDataNow,
 .DayBox:hover {
   background-color: #f5f5f5;
   color: #212121;
@@ -110,7 +100,7 @@ hr {
   cursor: pointer;
 }
 .DayName {
-  margin: 4px 0;
+  margin: 2px 4px;
 }
 .IconDay {
   max-width: 35px;
