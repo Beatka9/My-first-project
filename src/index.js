@@ -29,7 +29,7 @@ function setHours(timestamp) {
   }
   return ` ${hours}:${minutes}`;
 }
-function showCity() {
+function showCity(event) {
   event.preventDefault();
   let city = document.querySelector("#city");
   let showedCity = document.querySelector(".CityName");
@@ -39,6 +39,8 @@ function showCity() {
 }
 let searchCity = document.querySelector("#searchCity");
 searchCity.addEventListener("submit", showCity);
+let searchButton = document.querySelector("#searchButton");
+searchButton.addEventListener("click", showCity);
 
 function setCity(city) {
   let apiKey = "b502e3f5d51eafa682fcf63b13086eef";
