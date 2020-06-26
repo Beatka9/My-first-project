@@ -22,7 +22,8 @@ hr {
 
 .container {
   max-width: 500px;
-  background-image: url(/src/rosa.png) bottom;
+  background-image: url(/src/rosa.png);
+  background-position: bottom;
   font-family: "Comfortaa", cursive;
   text-align: center;
   color: #000;
