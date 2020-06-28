@@ -70,21 +70,21 @@ function showCityHere(response) {
 }
 function showTemperature(response) {
   let temperature = document.querySelector(".TemperatureNow");
-  celsiusTemperature = response.data.main.temp;
-  temperature.innerHTML = `${Math.round(celsiusTemperature)}`;
   let minTemperature = document.querySelector("#minTemperatureToday");
-  minTemperature.innerHTML = `${Math.round(response.data.main.temp_min)}`;
   let maxTemperature = document.querySelector("#maxTemperatureToday");
-  maxTemperature.innerHTML = `${Math.round(response.data.main.temp_max)}`;
   let feelsLike = document.querySelector("#feelsLike");
   let windSpeed = document.querySelector("#windSpeed");
   let humidity = document.querySelector("#humidity");
+  let weatherDescription = document.querySelector("#weatherDescription");
+  let iconTodayElement = document.querySelector("#iconToday");
+  celsiusTemperature = response.data.main.temp;
+  temperature.innerHTML = `${Math.round(celsiusTemperature)}`;
+  minTemperature.innerHTML = `${Math.round(response.data.main.temp_min)}`;
+  maxTemperature.innerHTML = `${Math.round(response.data.main.temp_max)}`;
   feelsLike.innerHTML = `${Math.round(response.data.main.feels_like)}`;
   humidity.innerHTML = `${Math.round(response.data.main.humidity)}`;
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}`;
-  let weatherDescription = document.querySelector("#weatherDescription");
   weatherDescription.innerHTML = `${response.data.weather[0].description}`;
-  let iconTodayElement = document.querySelector("#iconToday");
   iconTodayElement.setAttribute(
     `src`,
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -103,8 +103,8 @@ function showForecast(response) {
   for (index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     ForecastElement.innerHTML += `
-  <div class="col-2 DayBox">
-  <p class="DayName">
+  <div class="col-2 ForecastBox">
+  <p class="ForecastHour">
             ${setHours(forecast.dt * 1000)}
           </p>
           <img src="http://openweathermap.org/img/wn/${

@@ -10,13 +10,13 @@ input,
 .container,
 .WeatherDataNow,
 #current-city {
-  border: solid 2px #f5f5f5;
+  border: solid 2px #cceffc;
   border-radius: 5px;
   box-shadow: 1px 1px #212121;
 }
 hr {
-  color: #000;
-  border: solid 1px #000;
+  color: #212121;
+  border: solid 1px #212121;
   text-shadow: 1px 1px #212121;
 }
 
@@ -26,25 +26,26 @@ hr {
   background-position: bottom;
   font-family: "Comfortaa", cursive;
   text-align: center;
-  color: #000;
+  color: #212121;
   margin: 20px 0;
   display: block;
 }
 
 .button {
-  background-color: #f5f5f5;
+  background-color: #cceffc;
   color: #212121;
   margin: 2px 4px;
   padding: 2px;
   box-shadow: 1px 1px #212121;
-  transition: 300ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 .button:hover {
-  opacity: 0.4;
+  background-color: whitesmoke;
+  border-color: whitesmoke;
 }
 .CityName,
 .TemperatureNow,
-.DayName {
+.ForecastHour {
   font-weight: bold;
 }
 .TodayCol1,
@@ -70,37 +71,36 @@ hr {
 }
 .dataToday {
   font-size: 12px;
-  text-align: left;
 }
 .Hidden {
-  color: #000;
+  color: #212121;
   text-decoration: none;
 }
 .Hidden:hover {
   cursor: arrow;
-  color: #000;
+  color: #212121;
   text-decoration: none;
 }
 
-.DayBox,
+.ForecastBox,
 .WeatherDataNow {
   opacity: 0.9;
 }
 
-.DayBox {
+.ForecastBox {
   line-height: 1.2;
   margin: auto;
   transition: 300ms ease-in-out;
 }
 .WeatherDataNow,
-.DayBox:hover {
-  background-color: #f5f5f5;
+.ForecastBox:hover {
+  background-color: #cceffc;
   color: #212121;
   border-radius: 5px;
-  border: solid 1px #000;
+  border: solid 1px #212121;
   cursor: pointer;
 }
-.DayName {
+.ForecastHour {
   margin: 2px 0;
 }
 .IconDay {
@@ -122,5 +122,5 @@ hr {
   text-transform: capitalize;
 }
 #github-link {
-  color: #000;
+  color: #212121;
 }
